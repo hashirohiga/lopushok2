@@ -1,0 +1,59 @@
+﻿<Window x:Class="lopushok2.VIews.MaterialsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lopushok2.VIews"
+        xmlns:vm="clr-namespace:lopushok2.ViewModels"
+        mc:Ignorable="d"
+        Title="MaterialsWindow" 
+        Height="450"
+        Width="800"
+        ResizeMode="NoResize">
+
+    <Window.DataContext>
+        <vm:MaterialsWindowViewModel />
+    </Window.DataContext>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel
+            Grid.Row="0"
+            Orientation="Horizontal"
+            Margin="4">
+
+            <Button 
+                Content="back"
+                Width="100"
+                Margin="8"
+                Click="Button_Click"/>
+
+            <Button 
+                Content="button1"
+                Width="100"
+                Margin="8"/>
+
+            <Button 
+                Content="button1"
+                Width="100"
+                Margin="8"/>
+
+            <Button 
+                Content="button1"
+                Width="100"
+                Margin="8"/>
+
+        </StackPanel>
+
+        <DataGrid
+            Grid.Row="1">
+            
+            
+            
+        </DataGrid>
+    </Grid>
+</Window>
